@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peak Studios</title>
+  <link rel="icon" type="image.png" href="./assets/favicon_io/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section id="landing-page">
+    <nav class="nav__container">
+      <div class="nav__bar">
+        <figure>
+          <img class="peak__logo" src="./assets/Peak Studios - more transparent.png" alt="">
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link"><a class="no__cursor link__hover-effect" href="#">Home</a></li>
+          <li class="nav__link"><a class="no__cursor link__hover-effect" href="#">Movies</a></li>
+          <li class="nav__link"><a class="no__cursor link__hover-effect" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="search__wrapper">
+        <h1 class="search__title">Browse Our Movies</h1>
+        <div class="input__wrapper">
+          <input 
+          type="text" 
+          placeholder="Search Movie"
+          onchange="searchTerm(event)"
+          />
+          <i class="fas fa-magnifying-glass click"></i>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
+  <section id="header">
+    <div class="loading__spinner">
+      <i class="fas fa-spinner"></i>
+    </div>
+    <div class="header__container">
+      <div class="row">
+        <div class="results__bar">
+          <h2 class="results__title">
+            Search results for: <span class="search__value" onchange="searchTerm(event)"
+            ></span>
+          </h2>
+          <div class="movie__list">
+            <div class="no__movies--container">
+              <img class="undraw__img" src="./assets/undraw_home_cinema_l7yl.svg" alt="" class="no__movies">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="footer__container">
+      <div class="footer__row">
+        <figure>
+          <a class="click" href="#">
+            <img class="footer__logo--img" src="./assets/Peak Studios - more transparent.png" alt="">
+          </a>
+        </figure>
+        <div class="footer__copyright">Copyright © 2024 Peak Studios</div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="./script.js"></script>
+</html>
