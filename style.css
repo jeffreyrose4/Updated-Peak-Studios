@@ -113,7 +113,7 @@ MODAL
 */
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -136,7 +136,7 @@ MODAL
 
 .modal__half {
   width: 50%;
-  padding: 40px 72px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,7 +150,7 @@ MODAL
 }
 
 .modal__about {
-  background-color: rgb(245, 245, 245);
+  background-color: #242424;
   transform: translateX(-110%);
 }
 
@@ -167,6 +167,35 @@ MODAL
   color: white;
   font-size: 36px;
   z-index: 100;
+}
+
+.modal__movie--img {
+  width: 90%;
+}
+
+.modal__movie--description {
+  height: 100%;
+  width: 100%;
+}
+
+.modal__movie--title {
+  font-size: 32px;
+  margin: 12px 0 6px 0;
+}
+
+.modal__movie--rated {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.modal__movie--plot {
+  font-size: 24px;
+  margin-bottom: 48px;
+}
+
+.modal__movie--actors {
+  font-size: 16px;
+  margin-bottom: 48px;
 }
 
 /* 
