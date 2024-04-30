@@ -79,16 +79,20 @@ function toggleModal(imdbID) {
 function renderMovieInfo(movieInfo) {
   const modal = document.getElementById("modal");
   modal.innerHTML = `
-    <div class="modal__half modal__about">
+    <div class="modal__half modal__poster">
       <figure>
         <img src="${movieInfo.Poster}" alt="" class="modal__movie--img"/>
       </figure>
     </div>
-    <div class="modal__half modal__contact">
+    <div class="modal__half modal__description">
       <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
       <div class="modal__movie--description">
         <h3 class="movie__description modal__movie--title">${movieInfo.Title}</h3>
-        <h3 class="movie__description modal__movie--rated">${movieInfo.Rated}</h3>
+        <div class="modal__rated--runtime">
+          <h3 class="movie__description modal__movie--rated">${movieInfo.Rated}</h3>
+          <span class="rated__runtime--divider"> | </span>
+          <h3 class="movie__description modal__movie--runtime">${movieInfo.Runtime}</h3>
+        </div>
         <h3 class="movie__description modal__movie--plot">${movieInfo.Plot}</h3>
         <h3 class="movie__description modal__movie--actors">${movieInfo.Actors}</h3>
       </div>
